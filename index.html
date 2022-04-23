@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="form-container">
+        <img src="./images/logo.svg" alt="PING" class="logo" />
+        <h1>We are launching <span>soon!</span></h1>
+        <p class="subttitle">Subscribe and get notified</p>
+        <form id="myForm" class="form">
+          <div class="form-input">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email address..."
+              class="input-email"
+            />
+            <input type="submit" value="Notify Me" class="primary-button"
+            onclick="validateEmail(event)"
+            />
+          </div>
+        </form>
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="dashboard"
+          class="dashboard"
+        />
+      </div>
+    </section>
+    <footer>
+      <div class="social-media">
+        <ul class="list-social-media">
+          <li><ion-icon name="logo-facebook"></ion-icon></li>
+          <li><ion-icon name="logo-twitter"></ion-icon></li>
+          <li><ion-icon name="logo-instagram"></ion-icon></li>
+        </ul>
+        <p class="copy-right">&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="./index.js" />
+</html>

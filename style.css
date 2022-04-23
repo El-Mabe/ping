@@ -1,0 +1,126 @@
+:root {
+  /* Primary*/
+  --Blue: hsl(223, 87%, 63%);
+  /*Secondary*/
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  /*Neutral*/
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.logo {
+  margin-bottom: 20px;
+  justify-self: center;
+}
+
+h1 {
+  color: var(--Gray);
+  font-weight: 200;  
+  justify-self: center;
+}
+
+h1 > span {
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  justify-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+  border-color: var(--Pale-Blue);
+  border-width: 1px;
+  border-radius: 50px;
+  height: 30px;
+  font-size: small;
+  padding: 6px;
+}
+
+.input-email {
+  padding-left: 30px;
+}
+
+.dashboard {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.primary-button {
+  background-color: var(--Blue);
+  color: white;
+  width: 130px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+}
+
+.primary-button:hover {
+  cursor: pointer;
+
+}
+
+.social-media {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.list-social-media {
+  padding: 0;
+  list-style: none;
+}
+
+.list-social-media li {
+  display: inline;
+}
+
+ion-icon {
+  color: var(--Blue);
+  border-width: 1px;
+  margin: 8px;
+  font-size: large;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 50px;
+}
+
+.copy-right {
+  color: var(--Gray);
+  font-size: small;
+  font-weight: 500;
+}
